@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MovieRecommendationActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:id="@+id/imgPoster"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/terminal_poster" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    android:text="Title" />
+
+                <TextView
+                    android:id="@+id/txtYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YEAR"
+                    style="@style/MovieScreenLabelValue" />
+
+                <TextView
+                    android:id="@+id/txtRuntime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Runtime"
+                    style="@style/MovieScreenLabelValue" />
+
+                <TextView
+                    android:id="@+id/txtRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="IMDb Rating"
+                    style="@style/MovieScreenLabelValue" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:layout_marginTop="8dp"
+            style="@style/MovieScreenLabelValue"/>
+
+        <TextView
+            android:id="@+id/txtDirectorLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Director"
+            style="@style/MovieScreenLabel" />
+
+        <TextView
+            android:id="@+id/txtDirector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Director's name"
+            style="@style/MovieScreenLabelValue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cast"
+            style="@style/MovieScreenLabel"/>
+
+        <TextView
+            android:id="@+id/txtCast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cast details"
+            style="@style/MovieScreenLabelValue" />
+
+        <Button
+            android:id="@+id/btnRecommend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Recommend Another Movie" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
