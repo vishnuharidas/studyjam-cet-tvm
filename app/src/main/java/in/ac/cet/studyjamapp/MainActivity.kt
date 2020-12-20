@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
 
         val btnCalc = findViewById<Button>(R.id.btnCalculator)
 
+        val btnMovieRec = findViewById<Button>(R.id.btnMovie)
+
         btnHello.setOnClickListener {
 
             val intent = Intent(this, HelloWorldActivity::class.java)
@@ -26,6 +28,12 @@ class MainActivity : AppCompatActivity() {
         btnCalc.setOnClickListener {
 
             val intent = Intent(this, CalculatorActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnMovieRec.setOnClickListener {
+
+            val intent = Intent(this, MovieRecommendationActivity::class.java)
             startActivity(intent)
         }
 
